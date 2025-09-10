@@ -35,7 +35,7 @@ body {
 }
 
 .text-container {
-  font-size: large;
+  font-size: small;
   display: flex;
   flex-direction: column;
   text-align: center;
