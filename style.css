@@ -1,0 +1,85 @@
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 1000vh;
+  background-color: rgb(139, 201, 228);
+  animation: body 1s linear;
+}
+@keyframes body {
+  to {
+    background-color: rgb(19, 48, 97);
+  }
+}
+
+.progress {
+  height: 3px;
+  width: 0%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation: progress 1s linear;
+}
+@keyframes progress {
+  to {
+    background-color: rgb(231, 110, 221);
+    width: 100%;
+  }
+}
+
+.text-container {
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  animation: text 0.25s linear;
+}
+@keyframes text {
+  to {
+    color: #fff;
+    opacity: 0;
+  }
+}
+
+.square {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(120, 19, 214);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -100px;
+  animation: square 1s ease-in-out infinite;
+}
+@keyframes square {
+  to {
+    transform: rotate(360deg);
+    background-color: rgb(212, 10, 51);
+  }
+  25% {
+    scale: 100%;
+    border-radius: 0;
+    background-color: rgb(8, 8, 209);
+  }
+  50% {
+    scale: 200%;
+    border-radius: 50%;
+    background-color: rgb(9, 180, 9);
+  }
+  75% {
+    scale: 100%;
+    border-radius: 0;
+    background-color: rgb(201, 61, 10);
+  }
+}
+
+:root * {
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
