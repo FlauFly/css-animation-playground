@@ -62,20 +62,60 @@ body {
   left: 50%;
 }
 
-.smaller {
-  height: 100px;
-  width: 100px;
-  top: 10%;
-  left: 55%;
-  animation: sun 0.9s linear infinite;
-}
-
 .bigger {
   height: 100px;
   width: 100px;
   top: 15%;
-  left: 45%;
+  left: 25%;
   animation: sun 1.1s linear infinite;
+}
+
+.smaller {
+  height: 100px;
+  width: 100px;
+  top: 10%;
+  left: 60%;
+  animation: sun 0.9s linear infinite;
+}
+
+@media (min-width: 640px) {
+  .bigger {
+    left: 30%;
+  }
+
+  .smaller {
+    left: 60%;
+  }
+}
+
+@media (min-width: 768px) {
+  .bigger {
+    left: 35%;
+  }
+
+  .smaller {
+    left: 60%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bigger {
+    left: 40%;
+  }
+
+  .smaller {
+    left: 60%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .bigger {
+    left: 45%;
+  }
+
+  .smaller {
+    left: 55%;
+  }
 }
 
 @keyframes sun {
