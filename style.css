@@ -51,36 +51,46 @@ body {
   }
 }
 
-.square {
-  height: 200px;
-  width: 200px;
-  background-color: rgb(120, 19, 214);
+.sun {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: rgb(229, 233, 7);
+  box-shadow: 0 0 14px 14px rgb(229, 233, 7, 0.2);
   position: fixed;
-  top: 50%;
+  top: 20%;
   left: 50%;
-  margin-top: -100px;
-  margin-left: -100px;
-  animation: square 1s ease-in-out infinite;
 }
-@keyframes square {
-  to {
-    transform: rotate(360deg);
-    background-color: rgb(212, 10, 51);
-  }
-  25% {
-    scale: 100%;
-    border-radius: 0;
-    background-color: rgb(8, 8, 209);
-  }
-  50% {
-    scale: 200%;
-    border-radius: 50%;
-    background-color: rgb(9, 180, 9);
+
+.smaller {
+  height: 100px;
+  width: 100px;
+  top: 10%;
+  left: 55%;
+  animation: sun 0.9s linear infinite;
+}
+
+.bigger {
+  height: 100px;
+  width: 100px;
+  top: 15%;
+  left: 45%;
+  animation: sun 1.1s linear infinite;
+}
+
+@keyframes sun {
+  60% {
+    background-color: rgb(253, 196, 253);
+    box-shadow: 0 0 14px 14px rgb(243, 163, 243, 0.2);
   }
   75% {
-    scale: 100%;
-    border-radius: 0;
-    background-color: rgb(201, 61, 10);
+    background-color: rgb(185, 7, 7);
+    box-shadow: 0 0 14px 14px rgb(185, 7, 7, 0.2);
+  }
+  to {
+    top: 115%;
+    background-color: rgb(117, 4, 4);
+    box-shadow: 0 0 14px 14px rgb(117, 4, 4, 0.2);
   }
 }
 
